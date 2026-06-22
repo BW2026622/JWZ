@@ -1,0 +1,86 @@
+[index.html](https://github.com/user-attachments/files/29208345/index.html)
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Publish page</title>
+    <style>
+      .b {
+        background-image: url("publish image.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        margin: 0;
+      }
+      .border {
+        border: 1px solid white;
+        margin-left: 80px;
+        margin-right: 80px;
+      }
+      .flex {
+        display: flex;
+      }
+      .column {
+        flex-direction: column;
+      }
+      .table {
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        margin-left: 80px;
+        margin-right: 80px;
+      }
+      /* b{
+        指定图片路径
+        设置图片大小覆盖整个屏幕
+        将图片设置在屏幕正中间
+        防止图片重复
+        图片大小等于整个屏幕大小
+        边距为0
+      } */
+    </style>
+  </head>
+  <body class="b flex column">
+    <div
+      style="height: 100vh; margin: 0; text-align: center"
+      class="flex column"
+    >
+      <p style="font-size: 40px">Welcome to jwz</p>
+
+      <div class="border"></div>
+
+      <div style="margin-top: 80px; margin-bottom: 80px">
+        <p>本网站推荐使用谷歌浏览器进入，国产浏览器可能无法进入</p>
+        <p>如果显示网页已被封禁或其它情况，请打开vpn再次尝试进入网页</p>
+      </div>
+
+      <div class="border"></div>
+
+      <!-- table -->
+      <div class="table">
+        <table border="1" width="100%" cellspacing="0" cellpadding="1">
+          <thead>
+            <tr>
+              <th>网页链接</th>
+              <th>备用链接</th>
+              <th>官方推荐VPN</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="jwz.html" style="color: red">jwz.html</a></td>
+              <td><a href="" style="color: red">jwz by.html</a></td>
+              <td>
+                <a href="https://edu.360buyimg.men/" style="color: red"
+                  >NANO VPN</a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

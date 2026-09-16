@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width:device-width, initial-scale:1.0" />
+    <title>jwz</title>
+    <link rel="stylesheet" href="tongyong.css" />
+    <style>
+      /* content box */
+      .cb {
+        height: 200px;
+        margin-top: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+      .yincang {
+        display: none;
+      }
+      .fw {
+        background-color: red;
+        width: 200px;
+        height: 100px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .fwflex {
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
+  </head>
+
+  <body class="flex column" onload="floatwindow()">
+    <!-- floatwindow -->
+    <div id="fw" class="fw">
+      <h1 style="margin: 0; font-size: 20px">Welcome to JWZ</h1>
+      <p style="margin: 0">You can find anything in there</p>
+      <button id="closefw">x</button>
+    </div>
+    <script>
+      var fw = document.getElementById("fw");
+      var cfw = document.getElementById("closefw");
+      cfw.addEventListener("click", function () {
+        fw.classList.add("yincang");
+      });
+    </script>
+    <!-- top label -->
+    <div
+      style="flex: 2; justify-content: center; align-items: center"
+      class="flex"
+    >
+      <!-- search -->
+      <input type="search" placeholder="Search" />
+      <button>Search</button>
+
+      <!-- sign up -->
+      <a href="Sign Up.html" style="margin-left: 100px; margin-right: 8px"
+        >注册</a
+      >
+      <a href="upload.html">投稿</a>
+    </div>
+    <!-- content -->
+    <div style="flex: 10; overflow: auto">
+      <!-- video -->
+      <!-- game -->
+      <!-- comic -->
+      <div class="cb" id="test">
+        safsdasdf
+        <script>
+          var test = document.getElementById("test");
+          test.addEventListener("click", function () {
+            if (test.style.backgroundColor == "" || undefined) {
+              test.style.backgroundColor = "yellow";
+            } else if (test.style.backgroundColor == "yellow") {
+              test.style.backgroundColor = "";
+            }
+          });
+        </script>
+      </div>
+      <div class="cb"></div>
+      <div class="cb"></div>
+      <div class="cb"></div>
+      <div class="cb"></div>
+      <div class="cb"></div>
+      <div class="cb"></div>
+      <div class="cb"></div>
+      <div class="cb"></div>
+      <div class="cb"></div>
+      <div class="cb"></div>
+      <div class="cb"></div>
+    </div>
+    <!-- call back top -->
+    <a href="" target="_top" style="text-align: center">back top</a>
+  </body>
+</html>

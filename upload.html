@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>upload resource</title>
+    <link rel="stylesheet" href="tongyong.css" />
+  </head>
+  <body>
+    <form action="data.txt">
+      <label for="video">视频</label>
+      <input type="file" accept=".mp4" id="video" multiple />
+      <input type="submit" value="上传" />
+    </form>
+    <script>
+      var video = document.getAnimations("video");
+      var up = video.files[0];
+      var formdata = new FormData();
+    </script>
+  </body>
+</html>
